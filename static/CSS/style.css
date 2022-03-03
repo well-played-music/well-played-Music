@@ -1,0 +1,106 @@
+body {
+    background-image: url(http://iwallpapers2.free.fr/images/Espace/Espace_etoiles_-_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+   
+#top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(6, 0, 43, 0.9);
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0;
+    opacity: 0.95;
+    text-align: center;
+}
+   
+#top-menu a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 14px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#top-menu a:hover {
+    background-color: rgb(0, 20, 107);
+    text-decoration: underline;
+}
+   
+#en-tete {
+    position: inherit;
+    background-color: rgba(255, 0, 0, 0);
+    border-style: groove;
+    border-color: rgb(5, 0, 95);
+    padding-top: 35px;
+    padding-bottom: 2px;
+}
+   
+#en-tete p {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: rgb(255, 255, 255);
+}   
+
+#page_main {
+    top: 105px;
+    bottom: 5px;
+    padding-right: 50%;
+    background-color: rgba(5, 0, 95, 0.2);
+    border-style: groove;
+    border-color: rgb(5, 0, 95);
+    background-attachment: fixed;
+    text-align: left;
+}
+   
+/* .container {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: justify;
+    margin: center;
+} */
+
+.button_one {
+    border: 0;
+    line-height: 2.5;
+    margin: center;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+}
+   
+.bas_de_page {
+    position: absolute;
+    top: 100% ;
+    left: 0;
+    width: 100%;
+    height:40px;
+    background-color: rgb(6, 0, 43);
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+}
+   
+.bas_de_page a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-size-adjust: 10px;
+}
+
+.bas_de_page a:hover {
+    background-color: rgb(0, 20, 107);
+    text-decoration: underline;
+}
