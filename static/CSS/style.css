@@ -69,7 +69,7 @@ body {
     text-decoration: none;
     text-align: justify;
     margin: center;
-} 
+}
 
 .button {
     border: 0;
@@ -81,6 +81,7 @@ body {
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
+    text-emphasis-color: black;
 }
 
 .button:hover {
@@ -90,6 +91,7 @@ body {
 .button:active {
     background-color: #00aafa;
 }
+
 .bas_de_page {
     position: absolute;
     top: 100% ;
