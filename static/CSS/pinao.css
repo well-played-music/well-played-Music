@@ -20,6 +20,14 @@
     border: 1px solid #ccc;
 }
 
+.white:hover {
+    background-color: rgb(255, 10, 10);
+}
+
+.white:active {
+    background-color: #00aafa;
+}
+
 .black {
     width: 8%;
     height: 45%;
@@ -30,6 +38,10 @@
     border-radius: 35px;
 }
 
-.white.active {
-    background-color: #ccc;
+.black:hover {
+    background-color: rgb(255, 1, 1);
+}
+
+.black:active {
+    background-color: #00aafa;
 }
