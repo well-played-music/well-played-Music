@@ -1,0 +1,35 @@
+/*.piano {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}*/
+
+.piano {
+    height: 50vh;
+    width: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.white {
+    width: 9%;
+    min-width: 60px;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.black {
+    width: 8%;
+    height: 45%;
+    margin-left: -4%;
+    margin-right: -4%;
+    z-index: 2;
+    background-color: black;
+    border-radius: 35px;
+}
+
+.white.active {
+    background-color: #ccc;
+}
