@@ -1,5 +1,5 @@
 'use srict'
-function playMusic() {
-  var music = new Audio('static/sncf.wav');
+function playMusic(sound) {
+  var music = new Audio(`static/${sound}.wav`);
   music.play();
 }
