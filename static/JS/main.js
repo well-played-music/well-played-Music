@@ -44,4 +44,17 @@ class Instrument {
     
 }
 
+
+// clavier events
+
+document.addEventListener('keyup', (event) => {
+    var name = event.key;
+
+    switch(name){
+        case "a":
+            break;
+    }
+        
+}, false);
+
 var piano = new Instrument(filePiano);
