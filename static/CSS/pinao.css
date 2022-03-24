@@ -21,11 +21,15 @@
 }
 
 .white:hover {
-    background-color: rgb(255, 10, 10);
+    background: #ffffff;
+    box-shadow: 0 0 5px #c5c5c5, 0 0 25px #6b6b6b,
+     0 0 50px #585858;
+     transition: 300ms;
+    
 }
 
 .white:active {
-    background-color: #00aafa;
+    background-color: #c2c2c2;
 }
 
 .black {
