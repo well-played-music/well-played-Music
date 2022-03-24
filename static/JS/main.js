@@ -47,13 +47,24 @@ class Instrument {
 
 
 // clavier events
+document.addEventListener('keydown', (event) => {
+    var name = event.key;
+    console.log(name)
+    
+    // Vérifie si la touche cliqué est utile
+    if (mappingTouchesClavier.indexOf(name) !== -1){
+       piano.playMusic(mappingTouchesClavier.indexOf(name))
+    }
+        
+}, false);
 
 document.addEventListener('keyup', (event) => {
     var name = event.key;
-
-    switch(name){
-        case "a":
-            break;
+    console.log(name)
+    
+    // Vérifie si la touche cliqué est utile
+    if (mappingTouchesClavier.indexOf(name) !== -1){
+       piano.musicpause(mappingTouchesClavier.indexOf(name))
     }
         
 }, false);
