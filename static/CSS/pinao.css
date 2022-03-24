@@ -39,7 +39,9 @@
     margin-right: -4%;
     z-index: 2;
     background-color: black;
-    border-radius: 35px;
+    border-radius: 0px 0px 35px 35px;
+    border-right: solid white;
+    border-left: solid  white;
 }
 
 .black:hover {
