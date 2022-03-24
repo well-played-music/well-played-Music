@@ -1,29 +1,29 @@
 'use srict'
 
 filePiano = [
-    "pinao/do1 dièse-01",
-    "pinao/do1 dièse-02",
-    "pinao/do1 dièse-03",
-    "pinao/do1 dièse-04",
-    "pinao/do1 dièse-05",
-    "pinao/do1 dièse-06",
-    "pinao/do1 dièse-07",
-    "pinao/do1 dièse-08",
-    "pinao/do1 dièse-09",
-    "pinao/do1 dièse-10",
-    "pinao/do1 dièse-11",
-    "pinao/do1 dièse-12",
-    "pinao/do1 dièse-13",
-    "pinao/do1 dièse-14",
-    "pinao/do1 dièse-15",
-    "pinao/do1 dièse-16",
-    "pinao/do1 dièse-17",
-    "pinao/do1 dièse-18",
-    "pinao/do1 dièse-19",
-    "pinao/do1 dièse-20",
-    "pinao/do1 dièse-21",
-    "pinao/do1 dièse-22",
-    "pinao/do1 dièse-23"
+"pinao/do1 dièse-02",
+"pinao/do1 dièse-01",
+"pinao/do1 dièse-000",
+"pinao/do1 dièse-15",
+"pinao/do1 dièse-13",
+"pinao/do1 dièse-06",
+"pinao/do1 dièse-05",
+"pinao/do1 dièse-21",
+"pinao/do1 dièse-20",
+"pinao/do1 dièse-10",
+"pinao/do1 dièse-09",
+"pinao/do1 dièse-19",
+"pinao/do1 dièse-04",
+"pinao/do1 dièse-03",
+"pinao/do1 dièse-17",
+"pinao/do1 dièse-16",
+"pinao/do1 dièse-14",
+"pinao/do1 dièse-08",
+"pinao/do1 dièse-07",
+"pinao/do1 dièse-23",
+"pinao/do1 dièse-22",
+"pinao/do1 dièse-12",
+"pinao/do1 dièse-11"
 ]
 
 class Instrument {
@@ -34,8 +34,9 @@ class Instrument {
         }
     }
     
-    pauseMusic( index ){
+    musicpause( index ){
         this.files[ index ].pause();
+        this.files[index].currentTime = 0
     }
     
     playMusic(index) {
