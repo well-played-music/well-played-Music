@@ -26,6 +26,34 @@ filePiano = [
 "pinao/do1 dièse-11"
 ]
 
+mappingTouchesClavier = [ // les touches du clavier par rapport aux sons
+    "a",
+    "é",
+    "z",
+    '"',
+    "e",
+    "r",
+    "(",
+    "t",
+    "-",
+    "y",
+    "è",
+    "u",
+    "w",
+    "s",
+    "x",
+    "d",
+    "c",
+    "v",
+    "g",
+    "b",
+    "h",
+    "n",
+    "j",
+    ",",
+    ";" 
+]
+
 class Instrument {
     constructor( listOfFiles ){
         this.files = []
