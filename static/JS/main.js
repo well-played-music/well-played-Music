@@ -26,7 +26,7 @@ filePiano = [
 "pinao/do1 dièse-11"
 ]
 
-mappingTouchesClavier = [ // les touches du clavier par rapport aux sons
+mappingTouchesClavier = [ // les touches du clavier par rapport aux sons sous la forme ["touche", couleur] 
     "a",
     "é",
     "z",
@@ -51,9 +51,8 @@ mappingTouchesClavier = [ // les touches du clavier par rapport aux sons
     "n",
     "j",
     ",",
-    ";" 
+    ";"
 ]
-
 class Instrument {
     constructor( listOfFiles ){
         this.files = []
@@ -81,7 +80,14 @@ document.addEventListener('keydown', (event) => {
     
     // Vérifie si la touche cliqué est utile
     if (mappingTouchesClavier.indexOf(name) !== -1){
-       piano.playMusic(mappingTouchesClavier.indexOf(name))
+        var elementToChange = document.getElementById( mappingTouchesClavier.indexOf(name) ) // pour changer la couleur des touches
+        if ( elementToChange.classList.contains('white') ){
+            elementToChange.classList.add('whiteActivated');
+        } else {
+            elementToChange.classList.add('blackActivated');
+        }
+        
+        piano.playMusic(mappingTouchesClavier.indexOf(name))
     }
         
 }, false);
@@ -92,6 +98,13 @@ document.addEventListener('keyup', (event) => {
     
     // Vérifie si la touche cliqué est utile
     if (mappingTouchesClavier.indexOf(name) !== -1){
+        var elementToChange = document.getElementById( mappingTouchesClavier.indexOf(name) ) // pour changer la couleur des touches
+        if ( elementToChange.classList.contains('whiteActivated') ){
+            elementToChange.classList.remove('whiteActivated');
+        } else {
+            elementToChange.classList.remove('blackActivated');
+        }
+        
        piano.musicpause(mappingTouchesClavier.indexOf(name))
     }
         
