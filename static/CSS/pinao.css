@@ -51,7 +51,5 @@
 }
 
 .black:active {
-    background-color: rgba(0,0,0,0);
-    background-image: url(https://us.123rf.com/450wm/chuckchee/chuckchee1510/chuckchee151000052/45725801-pixel-art-fond-avec-arc-en-ciel-de-couleur-vagues.jpg?ver=6);
-    /*background-color: #5a8b92;*/
+    background-color: #ffffff;
 }
