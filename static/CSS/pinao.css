@@ -55,14 +55,3 @@
     background-image: url(https://us.123rf.com/450wm/chuckchee/chuckchee1510/chuckchee151000052/45725801-pixel-art-fond-avec-arc-en-ciel-de-couleur-vagues.jpg?ver=6);
     /*background-color: #5a8b92;*/
 }
-
-/* utilisé pour les touches activées depuis le clavier*/
-.blackActivated {
-    background-color: #00aafa;
-}
-
-.whiteActivated {
-    background-color: #c2c2c2;
-    box-shadow: 0 0 5px #c5c5c5, 0 0 25px #6b6b6b, 0 0 50px #585858;
-    transition: 300ms;
-}
