@@ -114,7 +114,7 @@ body {
 
 .bas_de_page {
     position: absolute;
-    width: 100%;
+    width: 98.85%;
     height: 10%;
     background-color: var(--color5);
     overflow: auto;
