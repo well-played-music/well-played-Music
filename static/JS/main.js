@@ -68,6 +68,7 @@ class Instrument {
   musicpause(index) {
     this.files[index][0].pause();
     this.files[index][0].currentTime = 0;
+    this.files[index][1] = false
   }
 
   playMusic(index) {
