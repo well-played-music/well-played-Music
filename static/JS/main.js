@@ -26,7 +26,7 @@ filePiano = [
 "pinao/do1 dièse-11"
 ]
 
-mappingTouchesClavier = [ // les touches du clavier par rapport aux sons sous la forme ["touche", couleur] 
+mappingTouchesClavier = [ // les touches du clavier par rapport aux sons
     "a",
     "é",
     "z",
@@ -57,17 +57,24 @@ class Instrument {
     constructor( listOfFiles ){
         this.files = []
         for (const element of listOfFiles ){
-            this.files.push( new Audio(`static/son/${element}.wav`)) // create an object for every audio files
+            this.files.push( [
+                new Audio(`static/son/${element}.wav`),
+                false // le statut de la musique pour éviter que le son se répète
+            ] ) // create an object for every audio files
         }
     }
     
     musicpause( index ){
-        this.files[ index ].pause();
-        this.files[index].currentTime = 0
+        this.files[index][0].pause();
+        this.files[index][0].currentTime = 0
+        
     }
     
     playMusic(index) {
-        this.files[index ].play();
+        if (!this.files[index][1]){ // si le son n'était pas déjas joué avant
+            this.files[index][0].play();
+            this.files[index][1] = true
+        }
     }
     
 }
@@ -78,7 +85,7 @@ document.addEventListener('keydown', (event) => {
     var name = event.key;
     console.log(name)
     
-    // Vérifie si la touche cliqué est utile
+    // Vérifie si la touche cliquée est utile
     if (mappingTouchesClavier.indexOf(name) !== -1){
         var elementToChange = document.getElementById( mappingTouchesClavier.indexOf(name) ) // pour changer la couleur des touches
         if ( elementToChange.classList.contains('white') ){
@@ -96,7 +103,7 @@ document.addEventListener('keyup', (event) => {
     var name = event.key;
     console.log(name)
     
-    // Vérifie si la touche cliqué est utile
+    // Vérifie si la touche cliquée est utile
     if (mappingTouchesClavier.indexOf(name) !== -1){
         var elementToChange = document.getElementById( mappingTouchesClavier.indexOf(name) ) // pour changer la couleur des touches
         if ( elementToChange.classList.contains('whiteActivated') ){
@@ -106,6 +113,7 @@ document.addEventListener('keyup', (event) => {
         }
         
        piano.musicpause(mappingTouchesClavier.indexOf(name))
+       this.files[index][1] = false
     }
         
 }, false);
