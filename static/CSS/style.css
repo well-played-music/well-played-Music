@@ -1,9 +1,4 @@
 :root{
-    --color1 : #000000 ;
-    --color2 : #2F4550 ;
-    --color3 : #5f7683 ;
-    --color4 : #586F7C ;
-    --color-font : #1e3847;
     --color5 : #152D35 ;
     --color6 : #88A5AB ;
     --color7 : #345B63 ;
@@ -19,8 +14,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-
-/* color for plus tard : site : https://www.0to255.com/00c4f3 */
 
 #top-menu {
     position: fixed;
@@ -77,8 +70,6 @@ body {
     bottom: 5px;
     padding-right: 50%;
     background-color: var(--color9);
-    /*border-style: groove;*/
-    /*border-color: rgb(5, 0, 95);*/
     background-attachment: fixed;
     text-align: left;
 }
@@ -137,8 +128,6 @@ body {
     text-decoration: underline;
 }
 
-
-/* utilisé pour les touches activées depuis le clavier*/
 .blackActivated {
     background-color: #00aafa;
 }
