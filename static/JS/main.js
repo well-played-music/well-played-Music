@@ -129,5 +129,14 @@ document.addEventListener(
   },
   false
 );
+notes = [3,5,8,5,12,12,10,3,5,8,5,10,10,8];
+
+function demoPlay(n){
+    piano.playMusic(notes[n]);
+    console.log(n);
+    if (n < 13){
+        setTimeout(demoPlay,1000,n+1);
+    }
+}
 
 var piano = new Instrument(filePiano);
