@@ -53,3 +53,13 @@
 .black:active {
     background-color: #ffffff;
 }
+
+.blackActivated {
+    background-color: #ffffff;
+        box-shadow: 0 0 5px #c5c5c5, 0 0 25px #6b6b6b,
+    0 0 50px #9e9e9e;
+}
+
+.whiteActivated {
+    background-color: #c2c2c2;
+}
