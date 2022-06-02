@@ -1,30 +1,32 @@
 "use srict";
 
 filePiano = [
-  "pinao/do1 dièse-02",
-  "pinao/do1 dièse-01",
-  "pinao/do1 dièse-000",
-  "pinao/do1 dièse-15",
-  "pinao/do1 dièse-13",
-  "pinao/do1 dièse-06",
-  "pinao/do1 dièse-05",
-  "pinao/do1 dièse-21",
-  "pinao/do1 dièse-20",
-  "pinao/do1 dièse-10",
-  "pinao/do1 dièse-09",
-  "pinao/do1 dièse-19",
-  "pinao/do1 dièse-04",
-  "pinao/do1 dièse-03",
-  "pinao/do1 dièse-17",
-  "pinao/do1 dièse-16",
-  "pinao/do1 dièse-14",
-  "pinao/do1 dièse-08",
-  "pinao/do1 dièse-07",
-  "pinao/do1 dièse-23",
-  "pinao/do1 dièse-22",
-  "pinao/do1 dièse-12",
-  "pinao/do1 dièse-11",
-];
+  'note/00_do_0', 
+  'note/01_re_b_0', 
+  'note/02_re_0', 
+  'note/03_mi_b_0', 
+  'note/04_mi_0', 
+  'note/05_fa_0', 
+  'note/06_so_b_0', 
+  'note/07_so_0', 
+  'note/08_la_b_0', 
+  'note/09_la_0', 
+  'note/10_si_b_0', 
+  'note/11_si_0',
+  'note/12_do_1', 
+  'note/13_re_b_1', 
+  'note/14_re_1', 
+  'note/15_mi_b_1', 
+  'note/16_mi_1', 
+  'note/17_fa_1', 
+  'note/18_so_b_1', 
+  'note/19_so_1', 
+  'note/20_la_b_1', 
+  'note/21_la_1',
+  'note/22_si_b_1', 
+  'note/23_si_1', 
+  'note/24_do_2'
+]
 
 mappingTouchesClavier = [
   // les touches du clavier par rapport aux sons
@@ -59,7 +61,7 @@ class Instrument {
     this.files = [];
     for (const element of listOfFiles) {
       this.files.push([
-        new Audio(`static/son/${element}.wav`),
+        new Audio(`static/son/${element}.`),
         false, // le statut de la musique pour éviter que le son se répète
       ]); // create an object for every audio files
     }
