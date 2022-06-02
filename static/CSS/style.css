@@ -5,6 +5,7 @@
     --color8 : #112031 ;
     --color9 : #D4ECDD ;
     --color10: #ffffff ;
+    --color11: #beccc3 ;
 
 }
 
@@ -69,7 +70,7 @@ body {
     top: 105px;
     bottom: 5px;
     padding-right: 50%;
-    background-color: var(--color9);
+    background-color: var(--color11);
     background-attachment: fixed;
     text-align: left;
 }
