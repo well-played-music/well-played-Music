@@ -61,7 +61,7 @@ class Instrument {
     this.files = [];
     for (const element of listOfFiles) {
       this.files.push([
-        new Audio(`static/son/${element}.`),
+        new Audio(`static/son/${element}.wav`),
         false, // le statut de la musique pour éviter que le son se répète
       ]); // create an object for every audio files
     }
