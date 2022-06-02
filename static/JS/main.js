@@ -1,32 +1,32 @@
 "use srict";
 
 filePiano = [
-  'note/00_do_0', 
-  'note/01_re_b_0', 
-  'note/02_re_0', 
-  'note/03_mi_b_0', 
-  'note/04_mi_0', 
-  'note/05_fa_0', 
-  'note/06_so_b_0', 
-  'note/07_so_0', 
-  'note/08_la_b_0', 
-  'note/09_la_0', 
-  'note/10_si_b_0', 
-  'note/11_si_0',
-  'note/12_do_1', 
-  'note/13_re_b_1', 
-  'note/14_re_1', 
-  'note/15_mi_b_1', 
-  'note/16_mi_1', 
-  'note/17_fa_1', 
-  'note/18_so_b_1', 
-  'note/19_so_1', 
-  'note/20_la_b_1', 
-  'note/21_la_1',
-  'note/22_si_b_1', 
-  'note/23_si_1', 
-  'note/24_do_2'
-]
+  "note/00_do_0",
+  "note/01_re_b_0",
+  "note/02_re_0",
+  "note/03_mi_b_0",
+  "note/04_mi_0",
+  "note/05_fa_0",
+  "note/06_so_b_0",
+  "note/07_so_0",
+  "note/08_la_b_0",
+  "note/09_la_0",
+  "note/10_si_b_0",
+  "note/11_si_0",
+  "note/12_do_1",
+  "note/13_re_b_1",
+  "note/14_re_1",
+  "note/15_mi_b_1",
+  "note/16_mi_1",
+  "note/17_fa_1",
+  "note/18_so_b_1",
+  "note/19_so_1",
+  "note/20_la_b_1",
+  "note/21_la_1",
+  "note/22_si_b_1",
+  "note/23_si_1",
+  "note/24_do_2",
+];
 
 mappingTouchesClavier = [
   // les touches du clavier par rapport aux sons
@@ -70,7 +70,7 @@ class Instrument {
   musicpause(index) {
     this.files[index][0].pause();
     this.files[index][0].currentTime = 0;
-    this.files[index][1] = false
+    this.files[index][1] = false;
   }
 
   playMusic(index) {
@@ -129,14 +129,14 @@ document.addEventListener(
   },
   false
 );
-notes = [3,5,8,5,12,12,10,3,5,8,5,10,10,8];
+notes = [3, 5, 8, 5, 12, 12, 10, 3, 5, 8, 5, 10, 10, 8];
 
-function demoPlay(n){
-    piano.playMusic(notes[n]);
-    console.log(n);
-    if (n < 13){
-        setTimeout(demoPlay,1000,n+1);
-    }
+function demoPlay(n) {
+  piano.playMusic(notes[n]);
+  console.log(n);
+  if (n < 13) {
+    setTimeout(demoPlay, 1000, n + 1);
+  }
 }
 
 var piano = new Instrument(filePiano);
