@@ -1,0 +1,140 @@
+:root{
+    --color5 : #152D35 ;
+    --color6 : #88A5AB ;
+    --color7 : #345B63 ;
+    --color8 : #112031 ;
+    --color9 : #D4ECDD ;
+    --color10: #ffffff ;
+    --color11: #beccc3 ;
+
+}
+
+body {
+    background-color: var(--color7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--color5);
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0;
+    opacity: 0.95;
+    text-align: center;
+}
+   
+#top-menu a {
+    display: inline-block;
+    color: var(--color10);
+    padding: 14px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#top-menu a:hover {
+    background-color: var(--color8);
+    border-radius: 10px;
+    text-decoration: underline;
+}
+   
+#en-tete {
+    position: inherit;
+    /*border-style: groove;*/
+    /*border-color: rgb(5, 0, 95);*/
+    padding-top: 35px;
+    padding-bottom: 2px;
+}
+   
+#en-tete p {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color:  var(--color10) ;
+}   
+
+.text-gauche {
+    background-color: none;
+    padding : 30px 50px 30px 50px; 
+}
+
+#page_main {
+    padding : 20 10 10;
+    top: 105px;
+    bottom: 5px;
+    padding-right: 50%;
+    background-color: var(--color11);
+    background-attachment: fixed;
+    text-align: left;
+}
+
+.container {
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: justify;
+    margin: center;
+}
+
+.button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-emphasis-color: black;
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.button:active {
+    background-color: #00aafa;
+}
+
+.bas_de_page {
+    position: absolute;
+    width: 98.85%;
+    height: 10%;
+    background-color: var(--color5);
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+}
+   
+.bas_de_page a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-size-adjust: 15px;
+}
+
+.bas_de_page a:hover {
+    background-color: var(--color8);
+    text-decoration: underline;
+}
+
+.blackActivated {
+    background-color: #00aafa;
+}
+
+.whiteActivated {
+    background-color: #c2c2c2;
+    box-shadow: 0 0 5px #c5c5c5, 0 0 25px #6b6b6b, 0 0 50px #585858;
+    transition: 300ms;
+}
