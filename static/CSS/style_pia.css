@@ -118,6 +118,8 @@ h2 {
 
 .bas_de_page {
     position: absolute;
+    top : 90%;
+    padding-top: 20px;
     width: 98.85%;
     height: 10%;
     background-color: var(--color5);
