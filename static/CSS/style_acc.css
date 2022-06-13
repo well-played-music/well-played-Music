@@ -87,7 +87,8 @@ body {
 
 .zone_droite img{
     padding-bottom: 30px;
-    padding-left: 150px;
+    padding-left: 125px;
+	width: 450px;
 }
 
 .container {
