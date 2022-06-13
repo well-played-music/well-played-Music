@@ -3,5 +3,5 @@
 
 A project by Arthur Exposito, Victor Balu, Simon Dumesny, Guillaume Osoux.
 
-(le site et l'ensemble du projet à été écrit en français, merci de votre compréhension.)
+(le site et l'ensemble du projet a été écrit en français, merci de votre compréhension.)
 (the site and the project have been written in French, thank you for your understanding.)
