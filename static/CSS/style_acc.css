@@ -60,6 +60,14 @@ body {
     color:  var(--color10) ;
 }   
 
+.container {
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: justify;
+    margin: center;
+}
+
 #page_main {
     top: 105px;
     bottom: 5px;
